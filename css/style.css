@@ -1,15 +1,16 @@
 /* ==========================================================================
    Team R2 — R2 Fabrication, LLC
-   Clean light theme · brand orange #FF6700 + black
+   Clean light theme · brand orange #E65C00 + black
    ========================================================================== */
 
 :root {
-  --orange: #FF6700;        /* logo orange — use for fills, bars, buttons (with black text) */
-  --orange-dark: #C24E00;   /* orange that passes contrast as text on white */
+  --orange: #E65C00;        /* logo orange (was #FF6700 until 2026-09-28) — fills, bars, buttons with black text (5.3:1), and large text (3.6:1 on white) */
+  --orange-dark: #B84A00;   /* orange for small text: 5.2:1 on white, 4.8:1 on --bg-alt, 4.7:1 on --orange-tint */
   --orange-tint: #FFF1E8;
   --ink: #111111;           /* logo black */
   --ink-2: #3A3B3E;
-  --grey: #7B7D82;          /* logo outline grey */
+  --grey: #7B7D82;          /* logo outline grey — shapes and rules, not small text */
+  --grey-text: #6C6E73;     /* grey for small text: 5.1:1 on white, 4.7:1 on --bg-alt */
   --line: #E4E4E1;
   --bg: #FFFFFF;
   --bg-alt: #F5F5F3;
@@ -54,7 +55,7 @@ ul { padding-left: 1.2em; }
 .brand img { width: 46px; height: 46px; }
 .brand .wordmark { font-family: var(--font-head); font-weight: 800; font-size: 1.55rem; letter-spacing: .04em; line-height: 1; }
 .brand .wordmark span { color: var(--orange); }
-.brand .sub { display: block; font-family: var(--font); font-weight: 500; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--grey); margin-top: 3px; white-space: nowrap; }
+.brand .sub { display: block; font-family: var(--font); font-weight: 500; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--grey-text); margin-top: 3px; white-space: nowrap; }
 
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: .95rem; padding: 8px 11px; white-space: nowrap; border-radius: var(--radius); }
@@ -122,7 +123,7 @@ section { padding: 80px 0; }
 .page-hero.has-img > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .page-hero.has-img h1, .page-hero.has-img .lead { color: #fff; }
 .page-hero.has-img .eyebrow { color: var(--orange); }
-.crumbs { font-size: .85rem; margin-bottom: 14px; color: var(--grey); }
+.crumbs { font-size: .85rem; margin-bottom: 14px; color: var(--grey-text); }
 .page-hero.has-img .crumbs, .page-hero.has-img .crumbs a { color: #cfcfcf; }
 .page-hero .btn-row { margin-top: 26px; }
 
@@ -240,12 +241,12 @@ fieldset { border: 0; padding: 0; margin: 0; }
 .form-section { font-family: var(--font-head); font-size: 1.25rem; font-weight: 700; color: var(--ink); border-bottom: 2px solid var(--line); padding-bottom: 6px; margin: 12px 0 0; grid-column: 1 / -1; }
 label, legend { display: block; font-weight: 600; font-size: .92rem; color: var(--ink); margin-bottom: 6px; }
 .req { color: var(--orange-dark); }
-.hint { font-weight: 400; color: var(--grey); font-size: .85rem; }
+.hint { font-weight: 400; color: var(--grey-text); font-size: .85rem; }
 input[type=text], input[type=email], input[type=tel], input[type=url], input[type=date], input[type=number], select, textarea {
   width: 100%; font: inherit; font-size: 1rem; padding: 11px 13px; border: 1px solid #cfcfca; border-radius: var(--radius); background: #fff; color: var(--ink);
 }
 textarea { min-height: 130px; resize: vertical; }
-input:focus, select:focus, textarea:focus { outline: 3px solid rgba(255,103,0,.3); border-color: var(--orange); }
+input:focus, select:focus, textarea:focus { outline: 3px solid rgba(230,92,0,.3); border-color: var(--orange); }
 .checks { display: flex; flex-wrap: wrap; gap: 8px 18px; }
 .checks label { display: flex; align-items: center; gap: 8px; font-weight: 500; margin: 0; }
 .checks input, .consent input { accent-color: var(--orange); width: 18px; height: 18px; }
@@ -259,7 +260,7 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(255,103,0,.3
 .contact-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 40px; align-items: start; }
 @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
 .info-block { margin-bottom: 22px; }
-.info-block h3 { font-size: 1.05rem; margin-bottom: 4px; text-transform: uppercase; letter-spacing: .08em; color: var(--grey); font-family: var(--font); }
+.info-block h3 { font-size: 1.05rem; margin-bottom: 4px; text-transform: uppercase; letter-spacing: .08em; color: var(--grey-text); font-family: var(--font); }
 .info-block p { margin: 0; color: var(--ink); font-weight: 500; }
 .map { border: 0; width: 100%; height: 300px; border-radius: var(--radius); }
 

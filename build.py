@@ -128,7 +128,7 @@ def layout(filename, title, description, body, schema=True):
 <meta property="og:description" content="{e(description)}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="{S["site_url"]}/images/hero.jpg">
-<meta name="theme-color" content="#FF6700">
+<meta name="theme-color" content="#E65C00">
 <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png">
 <link rel="apple-touch-icon" href="images/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">

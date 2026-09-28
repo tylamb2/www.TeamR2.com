@@ -57,4 +57,4 @@ thanks.html, 404.html, location.html (redirect), privacy-policy.html, sms.html
 css/style.css   js/site.js   images/   sitemap.xml   robots.txt   build.py
 ```
 
-Brand colors: orange `#FF6700`, black `#111111`, grey `#7B7D82` (sampled from the new logo). Fonts: Barlow / Barlow Condensed (Google Fonts).
+Brand colors: orange `#E65C00` (changed from `#FF6700` on 2026-09-28 so every use passes contrast), black `#111111`, grey `#7B7D82`. Small orange text uses `#B84A00` and small grey text `#6C6E73`. Fonts: Barlow / Barlow Condensed (Google Fonts).
